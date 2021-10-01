@@ -1,0 +1,399 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+.home {
+    background: #000;
+    color     : #fff;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    width   : 50%;
+}
+
+.hero-section {
+    display       : flex;
+    flex-direction: row;
+    flex-wrap     : wrap;
+}
+
+.hero-unit-moon-exploration .hero-image {
+    height             : 960px;
+    background-size    : 1440px 960px;
+    background-repeat  : no-repeat;
+    background-position: 50%;
+    background-image   : url('/images/luna_large.jpg');
+}
+
+.hero-unit-moon-exploration .space {
+    height             : 960px;
+    background-size    : 1440px 960px;
+    background-repeat  : no-repeat;
+    background-position: 50%;
+    background-image   : url('/images/final-frontier_large.jpg');
+}
+
+.hero-copy {
+    display          : flex;
+    flex-direction   : column;
+    justify-content  : center;
+    align-items      : center;
+    width            : 980px;
+    max-width        : 100%;
+    position         : absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+    top              : 50%;
+    left             : 50%;
+    z-index          : 1;
+}
+
+.space-link {
+    display: flex;
+    width  : 100%;
+    height : 100%;
+}
+
+h2 {
+    font-size     : 80px;
+    line-height   : 1.05;
+    font-weight   : 600;
+    letter-spacing: -.015em;
+}
+
+h3 {
+    font-size     : 40px;
+    line-height   : 1.05;
+    font-weight   : 600;
+    letter-spacing: -.015em;
+}
+
+/* SECTION TIMELINE*/
+
+.section-headline {
+    padding: 30px 100px;
+    color  : #fff;
+}
+
+.timeline-item {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    padding       : 10px;
+    width         : 40%;
+}
+
+.layout {
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    width          : 100%;
+    justify-content: center;
+    gap            : 30px;
+    height         : 2500px;
+}
+
+.timeline-1 {
+    height: 500px;
+}
+
+.timeline-3 {
+    position: relative;
+    bottom  : 390px;
+}
+
+.timeline-4 {
+    height  : 600px;
+    position: relative;
+    bottom  : 30px;
+}
+
+.timeline-5 {
+    position: relative;
+    bottom  : 410px;
+    height  : 800px;
+}
+
+.timeline-6 {
+    position: relative;
+    bottom  : 260px;
+}
+
+/* SECTION GALLERY*/
+.gallery {
+    color: #000;
+}
+
+.gallery-grid {
+    display              : grid;
+    grid-template-columns: repeat(12, 1fr);
+    display              : -webkit-grid;
+    display              : -moz-grid;
+    display              : -o-grid;
+    display              : -ms-grid;
+    -webkit-grid-columns : repeat(12, 1fr);
+    -moz-grid-columns    : repeat(12, 1fr);
+    -o-grid-columns      : repeat(12, 1fr);
+    -ms-grid-columns     : repeat(12, 1fr);
+}
+
+.gallery-photo {
+    position  : relative;
+    height    : 33vw;
+    max-height: 789px;
+    overflow  : hidden;
+}
+
+.gallery-photo figure {
+    background-position: 50%;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    height             : 100%;
+    width              : 100%;
+}
+
+.grid-third.grid-left {
+    grid-column         : 1/5;
+    -webkit-grid-columns: 1/5;
+    -moz-grid-columns   : 1/5;
+    -o-grid-columns     : 1/5;
+    -ms-grid-columns    : 1/5;
+}
+
+.grid-two-third.grid-right {
+    grid-column         : 5/13;
+    -webkit-grid-columns: 5/3;
+    -moz-grid-columns   : 5/3;
+    -o-grid-columns     : 5/3;
+    -ms-grid-columns    : 5/3;
+}
+
+.grid-two-third.grid-left {
+    grid-column         : 1/9;
+    -webkit-grid-columns: 1/9;
+    -moz-grid-columns   : 1/9;
+    -o-grid-columns     : 1/9;
+    -ms-grid-columns    : 1/9;
+}
+
+.grid-third.grid-right {
+    grid-column         : 9/13;
+    -webkit-grid-columns: 9/13;
+    -moz-grid-columns   : 9/13;
+    -o-grid-columns     : 9/13;
+    -ms-grid-columns    : 9/13;
+}
+
+
+.grid-half.grid-left {
+    grid-column         : 1/7;
+    -webkit-grid-columns: 1/7;
+    -moz-grid-columns   : 1/7;
+    -o-grid-columns     : 1/7;
+    -ms-grid-columns    : 1/7;
+}
+
+.grid-half.grid-right {
+    grid-column         : 7/13;
+    -webkit-grid-columns: 7/13;
+    -moz-grid-columns   : 7/13;
+    -o-grid-columns     : 7/13;
+    -ms-grid-columns    : 7/13;
+}
+
+
+
+.grid-two-third.grid-right {
+    grid-column         : 5/13;
+    -webkit-grid-columns: 5/3;
+    -moz-grid-columns   : 5/3;
+    -o-grid-columns     : 5/3;
+    -ms-grid-columns    : 5/3;
+}
+
+.image-moon-1 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-1.jpg');
+}
+
+.image-moon-2 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-2.jpg');
+}
+
+.image-moon-3 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-3.jpg');
+}
+
+.image-moon-4 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-4.jpg');
+}
+
+.image-moon-5 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-5.jpg');
+}
+
+.image-moon-6 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-6.jpg');
+}
+
+.image-moon-7 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-7.jpg');
+}
+
+.image-moon-8 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-8.jpg');
+}
+
+.image-moon-9 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-9.jpg');
+}
+
+.image-moon-10 {
+    background-repeat: no-repeat;
+    background-image : url('/images/gallery/moon-10.jpg');
+}
+
+/*FOOTER*/
+.footer {
+    padding: 60px 0;
+}
+
+.footer-list {
+    margin         : 0;
+    padding        : 0;
+    list-style-type: none;
+}
+
+.footer-list-item {
+    color: #aaa;
+}
+
+.footer-list-item a {
+    text-decoration: underline;
+    color          : #aaa;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+
+    .hero {
+        width: 100%;
+    }
+
+    /* TIMELINE*/
+    .section-headline {
+        padding: 30px 100px;
+        color  : #fff;
+    }
+
+    .timeline-item {
+        height: 100%;
+        width : 100%;
+        margin: 10px;
+    }
+
+
+    .layout {
+        height: 100%;
+    }
+
+    .timeline-1,
+    .timeline-2,
+    .timeline-3,
+    .timeline-4,
+    .timeline-5,
+    .timeline-6 {
+        width   : 100%;
+        position: relative;
+        top     : 0;
+        bottom  : 0;
+
+
+    }
+
+
+    /*GALLERY*/
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-photo {
+        height: 342px;
+        width : 100%;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width:479px) {
+
+    .hero {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 27px;
+    }
+
+    /* TIMELINE*/
+    .section-headline {
+        font-size: 30px;
+        color    : #fff;
+    }
+
+    .timeline-item {
+        height: 100%;
+        width : 100%;
+        margin: 10px;
+    }
+
+
+    .layout {
+        height: 100%;
+    }
+
+    .timeline-1,
+    .timeline-2,
+    .timeline-3,
+    .timeline-4,
+    .timeline-5,
+    .timeline-6 {
+        width   : 100%;
+        position: relative;
+        top     : 0;
+        bottom  : 0;
+
+
+    }
+
+
+    /*GALLERY*/
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-photo {
+        height: 342px;
+        width : 100%;
+    }
+
+}
